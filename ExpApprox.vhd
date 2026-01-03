@@ -21,7 +21,7 @@ architecture rtl of ExpApprox is
     signal iter_pos : std_logic;
     signal iter_dp  : std_logic;
     signal inc_i    : std_logic;
-    signal out_ld   : std_logic;  -- FIX: thêm cho kh?p controller
+    signal out_ld   : std_logic;  -- FIX: thÃªm cho kh?p controller
 
     -- Condition feedback
     signal i_lt_N   : std_logic;
@@ -66,9 +66,10 @@ begin
 
             i_lt_N   => i_lt_N,
             Z_lt_0   => Z_lt_0,
- out_ld   => out_ld,
+            out_ld   => out_ld,
             exp_out  => exp_out
         );
 
 end rtl;
+
 
