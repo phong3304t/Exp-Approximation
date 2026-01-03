@@ -9,8 +9,8 @@ entity ExpApprox_Controller is
         start   : in  std_logic;
 
         -- datapath
-        i_lt_N  : in  std_logic;  -- i < N
-        Z_lt_0  : in  std_logic;  -- Z < 0
+        i_lt_N  : in  std_logic; 
+        Z_lt_0  : in  std_logic; 
 
         -- Control to datapath
         init_dp  : out std_logic;
@@ -119,12 +119,12 @@ begin
             -- ITERATION: Z < 0
             when S5 =>
                 iter_dp  <= '1';
-                iter_pos <= '0';   -- Z < 0 => subtract
+                iter_pos <= '0'; 
 
             -- ITERATION: Z >= 0
             when S6 =>
                 iter_dp  <= '1';
-                iter_pos <= '1';   -- Z >= 0 => add
+                iter_pos <= '1';  
 
             -- Increment i
             when S7 =>
@@ -143,4 +143,5 @@ begin
     end process;
 
 end rtl;
+
 
