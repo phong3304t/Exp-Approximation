@@ -131,8 +131,8 @@ begin
                 inc_i <= '1';
 
             -- set output
-	when S8 =>
-  		out_ld <= '1';
+			when S8 =>
+  				out_ld <= '1';
             when S9 =>
               
                 done   <= '1';
@@ -143,5 +143,6 @@ begin
     end process;
 
 end rtl;
+
 
 
